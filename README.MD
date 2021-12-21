@@ -2,7 +2,7 @@
 
 ## Description:
 
-This is a cypress web automation project that test the creation and editing of a subject in the Snappet teacher dashboard.
+This is a cypress web automation project to test the creation and editing of a subject in the Snappet teacher dashboard.
 https://teacher.snappet.org
 
 ## Steps to run test:
@@ -29,8 +29,8 @@ You can also view the real time while it runs on the browser
 - run `npx cypress open`
 - click on the `subject-creation-and-update.spec.js` to open a new browser
 
-### a sample of the test result is in the `cypress/reports/mochareports` folder. you can view the index.html in a browser
+# a sample of the test result is in the `cypress/reports/mochareports` folder. you can view the index.html in a browser
 
 #### FYI
 
-- The endpoints/pages takes some time to load. i.e exceeeds the default cypress 4000ms `defaultCommandTimeout`. so I update the default to 15000ms.
+- The endpoints/pages takes some time to load. i.e exceeeds the default cypress 4000ms `defaultCommandTimeout`. so I updated the default timeout to 17000ms.

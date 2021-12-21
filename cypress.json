@@ -1,5 +1,5 @@
 {
-  "defaultCommandTimeout": 15000,
+  "defaultCommandTimeout": 17000,
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {
     "reporterEnabled": "mochawesome",

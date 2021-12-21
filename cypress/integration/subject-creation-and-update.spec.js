@@ -18,7 +18,7 @@ describe("User Authentication", () => {
     });
   });
   describe("Login", () => {
-    it("user should be able to enter username and password successfully", () => {
+    it("user should be able to login in successfully by entering username and password", () => {
       cy.get("input#Input_Username.form-control")
         .type("TechChallengeTeacher")
         .should("have.value", "TechChallengeTeacher");
