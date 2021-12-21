@@ -1,0 +1,338 @@
+{
+  "stats": {
+    "suites": 5,
+    "tests": 9,
+    "passes": 9,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-21T00:47:34.832Z",
+    "end": "2021-12-21T00:48:05.481Z",
+    "duration": 30649,
+    "testsRegistered": 9,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fb0ca036-26af-4bb3-b24a-22ef6cfa39fa",
+      "title": "",
+      "fullFile": "cypress/integration/subject-creation-and-update.spec.js",
+      "file": "cypress/integration/subject-creation-and-update.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a634aad9-6b73-43dd-9ce9-fb7717d71d36",
+          "title": "User Authentication",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "c3b54bd1-3f57-4b96-b4d1-adeca6385b61",
+              "title": "Visit teachers url",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "url should load successfully",
+                  "fullTitle": "User Authentication Visit teachers url url should load successfully",
+                  "timedOut": null,
+                  "duration": 1311,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.visit(\"https://teacher.snappet.org\");",
+                  "err": {},
+                  "uuid": "b9d47a5c-479d-40de-9e6e-2b14435ec4f8",
+                  "parentUUID": "c3b54bd1-3f57-4b96-b4d1-adeca6385b61",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "b9d47a5c-479d-40de-9e6e-2b14435ec4f8"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 1311,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            },
+            {
+              "uuid": "93a16b7d-7aff-4c60-8b5b-1c404ea5ba96",
+              "title": "Login",
+              "fullFile": "",
+              "file": "",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "user should be able to enter username and password successfully",
+                  "fullTitle": "User Authentication Login user should be able to enter username and password successfully",
+                  "timedOut": null,
+                  "duration": 6931,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "cy.get(\"input#Input_Username.form-control\").type(\"TechChallengeTeacher\").should(\"have.value\", \"TechChallengeTeacher\");\ncy.get(\"input#password-input.form-control\").type(\"P@ssw0rd\").should(\"have.value\", \"P@ssw0rd\");\ncy.get(\".btn\").click();",
+                  "err": {},
+                  "uuid": "345a937c-de57-4a0f-b2cb-ccfc18c9a332",
+                  "parentUUID": "93a16b7d-7aff-4c60-8b5b-1c404ea5ba96",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "345a937c-de57-4a0f-b2cb-ccfc18c9a332"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 6931,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "a3a7a5bb-64fe-4320-8a76-db8f7a35d099",
+          "title": "Activate subject",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "user should be able to click on the add subject button",
+              "fullTitle": "Activate subject user should be able to click on the add subject button",
+              "timedOut": null,
+              "duration": 11685,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".subject-option\").click();\ncy.get(\"add-subject-button\").click();",
+              "err": {},
+              "uuid": "8f94c109-e6c5-4952-82c6-79cb6170ecb2",
+              "parentUUID": "a3a7a5bb-64fe-4320-8a76-db8f7a35d099",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user should be able to select the subject to activate and click next",
+              "fullTitle": "Activate subject user should be able to select the subject to activate and click next",
+              "timedOut": null,
+              "duration": 2499,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"dropdown.initialized\").click();\ncy.get(\"span.select2-container.select2-container--default.select2-container--open\").contains(\"Taal\").click();\ncy.get(\"a.btn.btn-primary\").contains(\"Next\").click();",
+              "err": {},
+              "uuid": "a8c83428-df9d-44f6-b96e-5cf901a0db51",
+              "parentUUID": "a3a7a5bb-64fe-4320-8a76-db8f7a35d099",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user should be able to select the group level and click next",
+              "fullTitle": "Activate subject user should be able to select the group level and click next",
+              "timedOut": null,
+              "duration": 439,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".inner-grade-slider-tick\").contains(5).click();\ncy.get(\"a.btn.btn-primary\").contains(\"Next\").click();",
+              "err": {},
+              "uuid": "18ed9dc9-54bc-46c0-9251-1a7590cda92d",
+              "parentUUID": "a3a7a5bb-64fe-4320-8a76-db8f7a35d099",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user should be able to select from group suggestions",
+              "fullTitle": "Activate subject user should be able to select from group suggestions",
+              "timedOut": null,
+              "duration": 288,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"div.card.default\").eq(3).click();",
+              "err": {},
+              "uuid": "def55115-8b4e-41ce-9939-8ad134dae394",
+              "parentUUID": "a3a7a5bb-64fe-4320-8a76-db8f7a35d099",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user should be able to click the activate subject button",
+              "fullTitle": "Activate subject user should be able to click the activate subject button",
+              "timedOut": null,
+              "duration": 152,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"div.button-bar.stretch\").contains(\"Activate subject\").click();",
+              "err": {},
+              "uuid": "b7c1bb95-c06a-439e-9cfe-b5a6fa22456c",
+              "parentUUID": "a3a7a5bb-64fe-4320-8a76-db8f7a35d099",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8f94c109-e6c5-4952-82c6-79cb6170ecb2",
+            "a8c83428-df9d-44f6-b96e-5cf901a0db51",
+            "18ed9dc9-54bc-46c0-9251-1a7590cda92d",
+            "def55115-8b4e-41ce-9939-8ad134dae394",
+            "b7c1bb95-c06a-439e-9cfe-b5a6fa22456c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15063,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "7b225537-b494-439c-a5c2-26039538b0cf",
+          "title": "Edit subject name and grade",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "user should be able to click the subject edit button",
+              "fullTitle": "Edit subject name and grade user should be able to click the subject edit button",
+              "timedOut": null,
+              "duration": 1266,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".subject-container\").find(\"subjectgroup-info-block\").last().then(subjectEditModal => {\n  cy.wrap(subjectEditModal).find(\".btn.btn-txt\").click();\n});",
+              "err": {},
+              "uuid": "143bf752-c477-47b3-9bfe-272df3825b99",
+              "parentUUID": "7b225537-b494-439c-a5c2-26039538b0cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "user should be able to change subject name  and grade successfully",
+              "fullTitle": "Edit subject name and grade user should be able to change subject name  and grade successfully",
+              "timedOut": null,
+              "duration": 1143,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".panel-card.secondary\").then(editForm => {\n  cy.wrap(editForm).find(\"input\").clear().type(\"Amstaal\");\n  cy.wrap(editForm).find(\".selection\").click();\n  cy.get(\".select2-dropdown.select2-dropdown--below\").contains(\"Groep 8\").click();\n  cy.wrap(editForm).find(\"button.btn.btn-primary\").contains(\"Save\").click();\n});",
+              "err": {},
+              "uuid": "0fed208c-3d5b-4f7a-a7c2-3536038433e8",
+              "parentUUID": "7b225537-b494-439c-a5c2-26039538b0cf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "143bf752-c477-47b3-9bfe-272df3825b99",
+            "0fed208c-3d5b-4f7a-a7c2-3536038433e8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2409,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}
