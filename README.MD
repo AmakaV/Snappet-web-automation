@@ -29,7 +29,7 @@ You can also view the real time while it runs on the browser
 - run `npx cypress open`
 - click on the `subject-creation-and-update.spec.js` to open a new browser
 
-# a sample of the test result is in the `cypress/reports/mochareports` folder. you can view the index.html in a browser
+## a sample of the test result is in the `cypress/reports/mochareports` folder. you can view the index.html in a browser
 
 #### FYI
 
