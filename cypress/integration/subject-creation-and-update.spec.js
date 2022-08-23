@@ -70,7 +70,7 @@ describe("Edit subject name and grade", () => {
       });
   });
 
-  it("user should be able to change subject name  and grade successfully", () => {
+  it("user should be able to change the subject name  and grade successfully", () => {
     cy.get(".panel-card.secondary").then((editForm) => {
       cy.wrap(editForm).find("input").clear().type("Amstaal");
       cy.wrap(editForm).find(".selection").click();
