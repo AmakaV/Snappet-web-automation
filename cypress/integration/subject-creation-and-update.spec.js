@@ -60,8 +60,8 @@ describe("Activate subject", () => {
   });
 });
 
-describe("Edit subject name and grade", () => {
-  it("user should be able to click the subject edit button", () => {
+describe("User edits subject name and grade", () => {
+  it("user should be able to click the subject edit button succesfully", () => {
     cy.get(".subject-container")
       .find("subjectgroup-info-block")
       .last()
